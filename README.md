@@ -1,6 +1,6 @@
 Introduction
 
-The "Async-Await-API-layer-like-moya" repository is a comprehensive and versatile solution for making network requests in Swift-based iOS applications using the modern async/await paradigm. Inspired by Moya, this repository simplifies and streamlines the process of integrating APIs into your iOS app, reducing boilerplate code and promoting a clean, maintainable architecture.
+This repository is a comprehensive and versatile solution for making network requests in Swift-based iOS applications using the modern async/await paradigm. Inspired by Moya, this repository simplifies and streamlines the process of integrating APIs into your iOS app, reducing boilerplate code and promoting a clean, maintainable architecture.
 
 Key Features
 

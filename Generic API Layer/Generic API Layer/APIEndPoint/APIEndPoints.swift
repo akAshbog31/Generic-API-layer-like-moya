@@ -55,7 +55,11 @@ extension FakeAPI: APIProtocol {
         case .getPost(let model):
             return .queryString(model.asDictionary)
         case .upload(let model):
-            return .multiPart(model.asDictionary)
+            var formData = MultipartRequest()
+            formData.add(key: "format", value: model.format ?? "")
+            formData.add(key: "key", value: model.key ?? "")
+            formData.add(key: "source", fileName: "\(UUID().uuidString).jpeg", fileMimeType: "image/jpeg", fileData: model.source ?? Data())
+            return .multiPart(formData)
         }
     }
     

@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04BD861D2AAB1D7400276506 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD86172AAB1D7400276506 /* APIProtocol.swift */; };
-		04BD861E2AAB1D7400276506 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD86182AAB1D7400276506 /* APIService.swift */; };
-		04BD861F2AAB1D7400276506 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD861A2AAB1D7400276506 /* Ext.swift */; };
-		04BD86202AAB1D7400276506 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD861C2AAB1D7400276506 /* Enums.swift */; };
 		04F5A0582AAB2C0B00FF415A /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A0572AAB2C0B00FF415A /* ImagePickerManager.swift */; };
 		04F5A05A2AAB2C8000FF415A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A0592AAB2C8000FF415A /* Model.swift */; };
 		3847857C2A7AC1D900ABBA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847857B2A7AC1D900ABBA67 /* AppDelegate.swift */; };
@@ -21,13 +17,14 @@
 		384785882A7AC1DA00ABBA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384785862A7AC1DA00ABBA67 /* LaunchScreen.storyboard */; };
 		384785962A7ACC9800ABBA67 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384785952A7ACC9800ABBA67 /* APIEndPoints.swift */; };
 		384785992A7ACFFE00ABBA67 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384785982A7ACFFE00ABBA67 /* NetworkService.swift */; };
+		38A2FEBC2B2EFA360009A350 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2FEB52B2EFA360009A350 /* APIProtocol.swift */; };
+		38A2FEBD2B2EFA360009A350 /* MultipartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2FEB62B2EFA360009A350 /* MultipartRequest.swift */; };
+		38A2FEBE2B2EFA360009A350 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2FEB72B2EFA360009A350 /* APIService.swift */; };
+		38A2FEBF2B2EFA360009A350 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2FEB92B2EFA360009A350 /* Ext.swift */; };
+		38A2FEC02B2EFA360009A350 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2FEBB2B2EFA360009A350 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04BD86172AAB1D7400276506 /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
-		04BD86182AAB1D7400276506 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		04BD861A2AAB1D7400276506 /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
-		04BD861C2AAB1D7400276506 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		04F5A0572AAB2C0B00FF415A /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		04F5A0592AAB2C8000FF415A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		384785782A7AC1D900ABBA67 /* Generic API Layer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic API Layer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +37,11 @@
 		384785892A7AC1DA00ABBA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384785952A7ACC9800ABBA67 /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
 		384785982A7ACFFE00ABBA67 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		38A2FEB52B2EFA360009A350 /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		38A2FEB62B2EFA360009A350 /* MultipartRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartRequest.swift; sourceTree = "<group>"; };
+		38A2FEB72B2EFA360009A350 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		38A2FEB92B2EFA360009A350 /* Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
+		38A2FEBB2B2EFA360009A350 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,33 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04BD86162AAB1D7400276506 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				04BD86172AAB1D7400276506 /* APIProtocol.swift */,
-				04BD86182AAB1D7400276506 /* APIService.swift */,
-				04BD86192AAB1D7400276506 /* Ext */,
-				04BD861B2AAB1D7400276506 /* Enum */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		04BD86192AAB1D7400276506 /* Ext */ = {
-			isa = PBXGroup;
-			children = (
-				04BD861A2AAB1D7400276506 /* Ext.swift */,
-			);
-			path = Ext;
-			sourceTree = "<group>";
-		};
-		04BD861B2AAB1D7400276506 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				04BD861C2AAB1D7400276506 /* Enums.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
 		04F5A0562AAB2C0B00FF415A /* ImagePickerManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				384785972A7ACFD300ABBA67 /* Managers */,
-				04BD86162AAB1D7400276506 /* Network */,
+				38A2FEB42B2EFA360009A350 /* Network */,
 				384785942A7ACC8000ABBA67 /* APIEndPoint */,
 				3847857B2A7AC1D900ABBA67 /* AppDelegate.swift */,
 				3847857D2A7AC1D900ABBA67 /* SceneDelegate.swift */,
@@ -137,6 +112,34 @@
 				384785982A7ACFFE00ABBA67 /* NetworkService.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		38A2FEB42B2EFA360009A350 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				38A2FEB52B2EFA360009A350 /* APIProtocol.swift */,
+				38A2FEB62B2EFA360009A350 /* MultipartRequest.swift */,
+				38A2FEB72B2EFA360009A350 /* APIService.swift */,
+				38A2FEB82B2EFA360009A350 /* Ext */,
+				38A2FEBA2B2EFA360009A350 /* Enum */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		38A2FEB82B2EFA360009A350 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				38A2FEB92B2EFA360009A350 /* Ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		38A2FEBA2B2EFA360009A350 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				38A2FEBB2B2EFA360009A350 /* Enums.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,16 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A2FEBC2B2EFA360009A350 /* APIProtocol.swift in Sources */,
 				384785802A7AC1D900ABBA67 /* ViewController.swift in Sources */,
 				04F5A0582AAB2C0B00FF415A /* ImagePickerManager.swift in Sources */,
-				04BD861E2AAB1D7400276506 /* APIService.swift in Sources */,
 				3847857C2A7AC1D900ABBA67 /* AppDelegate.swift in Sources */,
 				3847857E2A7AC1D900ABBA67 /* SceneDelegate.swift in Sources */,
+				38A2FEBD2B2EFA360009A350 /* MultipartRequest.swift in Sources */,
+				38A2FEBF2B2EFA360009A350 /* Ext.swift in Sources */,
+				38A2FEBE2B2EFA360009A350 /* APIService.swift in Sources */,
 				384785962A7ACC9800ABBA67 /* APIEndPoints.swift in Sources */,
-				04BD861F2AAB1D7400276506 /* Ext.swift in Sources */,
-				04BD861D2AAB1D7400276506 /* APIProtocol.swift in Sources */,
 				04F5A05A2AAB2C8000FF415A /* Model.swift in Sources */,
-				04BD86202AAB1D7400276506 /* Enums.swift in Sources */,
+				38A2FEC02B2EFA360009A350 /* Enums.swift in Sources */,
 				384785992A7ACFFE00ABBA67 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

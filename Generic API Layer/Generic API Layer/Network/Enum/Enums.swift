@@ -9,9 +9,18 @@ import Foundation
 
 enum APIError: Error {
     case badRequest
-    case decodingError
-    case invalidURL
-    case noUserFound
+    case invalidURL(urlStr: String)
+}
+
+extension APIError: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .badRequest:
+            return "Api request is bad."
+        case .invalidURL(let urlStr):
+            return "\(urlStr) is invalid url."
+        }
+    }
 }
 
 enum APIMethod: String {
@@ -21,7 +30,7 @@ enum APIMethod: String {
 enum Request {
     case jsonEncoding(_ model: [String: Any]?)
     case queryString(_ dict: [String: Any]?)
-    case multiPart(_ dict: [String: Any]?)
+    case multiPart(_ multiPart: MultipartRequest)
     case none
     
     var jsonBody: [String: Any]? {
@@ -41,11 +50,11 @@ enum Request {
         }
     }
     
-    var formData: (Data, String)? {
+    var formData: MultipartRequest? {
         switch self {
         case .jsonEncoding, .queryString, .none: return nil
-        case .multiPart(let dict):
-            return dict?.asMultiPartData()
+        case .multiPart(let multiPart):
+            return multiPart
         }
     }
 }

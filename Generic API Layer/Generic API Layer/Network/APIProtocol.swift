@@ -19,12 +19,12 @@ protocol APIProtocol {
 
 extension APIProtocol {
     func asURLRequest() throws -> URLRequest {
-        guard var urlBuilder = URLComponents(string: baseURL + path) else { throw APIError.invalidURL }
+        guard var urlBuilder = URLComponents(string: baseURL + path) else { throw APIError.invalidURL(urlStr: baseURL + path) }
         if !task.queryItem.isEmpty {
             urlBuilder.queryItems = task.queryItem
             urlBuilder.percentEncodedQuery = urlBuilder.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
         }
-        guard let url = urlBuilder.url else { throw APIError.invalidURL }
+        guard let url = urlBuilder.url else { throw APIError.invalidURL(urlStr: urlBuilder.url?.absoluteString ?? "") }
         var urlRequest = URLRequest(url: url)
         urlRequest.allHTTPHeaderFields = header
         urlRequest.httpMethod = method.rawValue.uppercased()
@@ -32,10 +32,10 @@ extension APIProtocol {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: bodyParams, options: [])
         }
         if let multiPart = task.formData {
-            urlRequest.addValue("multipart/form-data; boundary=\(multiPart.1)", forHTTPHeaderField: "Content-Type")
-            urlRequest.httpBody = multiPart.0
+            urlRequest.addValue(multiPart.httpContentTypeHeadeValue, forHTTPHeaderField: "Content-Type")
+            urlRequest.httpBody = multiPart.httpBody
         }
-#if DEBUG || Debug || debug
+#if DEBUG
         print(urlRequest.curlString)
 #endif
         return urlRequest

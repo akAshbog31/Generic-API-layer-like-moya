@@ -50,6 +50,6 @@ Documentation: Refer to the repository's documentation for detailed examples and
 
 Conclusion
 
-The "Async-Await-API-layer-like-moya" repository empowers iOS developers to efficiently integrate and manage network requests in their apps, embracing modern Swift features like async/await while maintaining a clean, organized codebase. With its flexibility, extensibility, and comprehensive error handling, it simplifies the complexities of working with APIs, allowing developers to focus on building great user experiences.
+The "Generic-API-layer-like-moya" repository empowers iOS developers to efficiently integrate and manage network requests in their apps, embracing modern Swift features like async/await while maintaining a clean, organized codebase. With its flexibility, extensibility, and comprehensive error handling, it simplifies the complexities of working with APIs, allowing developers to focus on building great user experiences.
 
 By adopting this repository, you can save time, reduce bugs, and enhance the maintainability of your iOS applications, ensuring they perform flawlessly and provide the best possible user experience.
